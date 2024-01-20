@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "Work sans";
+  src: url("./assets/fonts/WorkSans-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Work sans-Italic";
+  src: url("./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--LightPink);
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  border: 0.5px solid var(--LightPink);
+  margin: 15px 0 15px 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --LightPink: hsl(275, 100%, 97%);
+  --GrayishPurple: hsl(292, 16%, 49%);
+  --DarkPurple: hsl(292, 42%, 14%);
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: "Work sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+  background-color: var(--LightPink);
+  background-image: url(./assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: hsl(292, 42%, 14%);
+}
+
+.FAQbox {
+  width: 600px;
+  padding: 40px;
+  background-color: var(--White);
+  border-radius: 15px;
+  box-shadow: var(--GrayishPurple) 0 0 50px;
+}
+
+.faqBoxHeader {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 60px 0;
+  gap: 15px;
+}
+
+.faqBoxHeader h2 {
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--DarkPurple);
+}
+
+.question {
+  width: 100%;
+}
+
+.answerExpander {
+  width: 100%;
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.answerExpander h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--DarkPurple);
+}
+
+.answer {
+  width: 100%;
+}
+
+.answer p {
+  color: var(--GrayishPurple);
+  font-weight: 400;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+/*Desktop*/
+@media only screen and (min-width: 760px) {
+  .answerExpander:hover h1 {
+    color: var(--GrayishPurple);
+  }
+
+  .answerExpander:focus h1 {
+    color: var(--GrayishPurple);
+  }
+
+  .answerExpander:active h1 {
+    color: hsla(293, 16%, 49%, 0.75);
+  }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 500px) {
+  .FAQbox {
+    width: clamp(275px, 50%, 450px);
+    padding: 40px;
+    background-color: var(--White);
+    border-radius: 15px;
+    box-shadow: var(--GrayishPurple) 0 0 50px;
+  }
+
+  .answerExpander:active h1 {
+    color: hsla(293, 16%, 49%, 0.75);
+  }
+
+  .container {
+    background-image: url(./assets/images/background-pattern-mobile.svg);
+  }
+}
