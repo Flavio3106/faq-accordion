@@ -64,4 +64,4 @@ for (let index = 0; index < buttons.length; index++) {
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Flavio3106)
+- Frontend Mentor - [@Flavio3106](https://www.frontendmentor.io/profile/Flavio3106)
