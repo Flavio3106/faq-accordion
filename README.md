@@ -46,8 +46,8 @@ const buttons = document.querySelectorAll(".answerExpander");
 const answers = document.querySelectorAll(".answer");
 //*plusIcons
 const plusIcons = document.querySelectorAll(".plusIcons");
-//*minusIcons const
-minusIcons = document.querySelectorAll(".minusIcons");
+//*minusIcons
+const minusIcons = document.querySelectorAll(".minusIcons");
 
 for (let index = 0; index < buttons.length; index++) {
   const btn = buttons[index];
